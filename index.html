@@ -1095,8 +1095,8 @@
         if (!results[2]) return "";
         return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
-      const stuID = getParameterByName("id");
-      const stuName = getParameterByName("name");
+      const stuID = getParameterByName("stuID");
+      const stuName = getParameterByName("stuName");
       if (stuID !== null && stuName !== null) {
         Cookies.set("name", stuName, {
           expires: 365,
